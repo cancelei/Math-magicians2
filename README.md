@@ -1,70 +1,164 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a name="readme-top"></a>
 
-## Available Scripts
+<div align="center">
+  <h3><b>Math Magician</b></h3>
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+# 📗 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 📖 React Math Magicians<a name="about-project"></a>
+This is react project that includes a real calculator for basic operations with operants. It will have many branches and clear commit messages.
 
-### `npm test`
+## 🛠 Built With Love and Passion<a name="built-with"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tech Stack <a name="tech-stack"></a>
 
-### `npm run build`
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://html.com/">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/javascript">JavaScript</a></li>
+    <li><a href="https://react.dev/">React</a></li>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  </ul>
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li>N/A</li>
+  </ul>
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+<summary>Database</summary>
+  <ul>
+    <li>N/A</li>
+  </ul>
+</details>
 
-### `npm run eject`
+### Key Features <a name="key-features"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React Html and Css best paractice
+- JavaScript best paractice
+- Using gitflow and GitHub flow
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 <a  name="live-demo" href="https://cancelei.github.io/JS-capstone-M2/dist/index.html">Live Demo</a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 <a  name="live-demo" href="https://clipchamp.com/watch/2OFqkUjfj9Q">Video Presentation</a>
 
-## Learn More
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 💻 Getting Started <a name="getting-started"></a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To get a local copy up and running, follow these steps.
 
-### Code Splitting
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+In order to run this project you need:
 
-### Analyzing the Bundle Size
+Download Project Files from github.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Setup
 
-### Making a Progressive Web App
+Clone this repository to your desired folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Install
 
-### Advanced Configuration
+Install Node Package by running:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- npm install
+
+### Usage
+
+- In other to use the repo you either to create a branch to create new features.
+- But in order to run the project use the commands below:
+  - npm run build (It will create a production ready file)
+  - npm start (It will run the server on your local machine)
+
+### Run Linters (Testing)
+
+I have added Linters different kinds of Linters to help avoid typos and ensure the best practices of the code base.
+So while using this repository if you need to check your work no matter if you have worked on HTML or CSS, or even JS you can use the commands below.
+
+- To run the linter test on index.html or any HTML file. Use the below command:
+npx hint . 
+
+-To run linter test on Stylesheets (CSS or sass). Use the below command:
+npx Stylelint "**/*.{css,scss}"
+
+- To run linter test on ES Lint (JS). Use the below command:
+npx eslint .
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+N/A
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👥 Authors <a name="authors"></a>
+
+> Mention all of the collaborators of this project.
+
+👤 **Author Glauber Bannwart**
+
+- GitHub: [@cancelei](https://github.com/cancelei)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/gbannwart)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- Implement Components
+- Use different React Hooks
+- Implement more features.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+N/A
+
+## ⭐️ Show your support <a name="support"></a>
+
+N/A
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+We are gratefull of Microvers stuff and founder for creating such an amazing envirnment that we can work and learn.
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
