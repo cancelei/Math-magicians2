@@ -1,6 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // eslint-disable-line import/no-extraneous-dependencies
 
-function Calculator() {
+function Button({ text, style }) {
+  return (
+    <button type="button" style={style}>
+      {text}
+    </button>
+  );
+}
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  style: PropTypes.shape({
+    backgroundColor: PropTypes.string,
+    border: PropTypes.string,
+    padding: PropTypes.string,
+    borderRadius: PropTypes.string,
+    cursor: PropTypes.string,
+    gridColumn: PropTypes.string,
+  }).isRequired,
+};
+
+export default function Calculator() {
   const calculatorStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -37,66 +58,26 @@ function Calculator() {
       <input placeholder="0" style={displayStyle} />
 
       <div style={buttonParent}>
-        <button type="button" style={buttonStyle}>
-          AC
-        </button>
-        <button type="button" style={buttonStyle}>
-          +/-
-        </button>
-        <button type="button" style={buttonStyle}>
-          %
-        </button>
-        <button type="button" style={{ ...buttonStyle, backgroundColor: 'orange' }}>
-          /
-        </button>
-        <button type="button" style={buttonStyle}>
-          7
-        </button>
-        <button type="button" style={buttonStyle}>
-          8
-        </button>
-        <button type="button" style={buttonStyle}>
-          9
-        </button>
-        <button type="button" style={{ ...buttonStyle, backgroundColor: 'orange' }}>
-          X
-        </button>
-        <button type="button" style={buttonStyle}>
-          4
-        </button>
-        <button type="button" style={buttonStyle}>
-          5
-        </button>
-        <button type="button" style={buttonStyle}>
-          6
-        </button>
-        <button type="button" style={{ ...buttonStyle, backgroundColor: 'orange' }}>
-          -
-        </button>
-        <button type="button" style={buttonStyle}>
-          1
-        </button>
-        <button type="button" style={buttonStyle}>
-          2
-        </button>
-        <button type="button" style={buttonStyle}>
-          3
-        </button>
-        <button type="button" style={{ ...buttonStyle, backgroundColor: 'orange' }}>
-          +
-        </button>
-        <button type="button" style={{ ...buttonStyle, gridColumn: '1 / span 2' }}>
-          0
-        </button>
-        <button type="button" style={buttonStyle}>
-          .
-        </button>
-        <button type="button" style={{ ...buttonStyle, backgroundColor: 'orange' }}>
-          =
-        </button>
+        <Button text="AC" style={buttonStyle} />
+        <Button text="+/-" style={buttonStyle} />
+        <Button text="%" style={buttonStyle} />
+        <Button text="/" style={{ ...buttonStyle, backgroundColor: 'orange' }} />
+        <Button text="7" style={buttonStyle} />
+        <Button text="8" style={buttonStyle} />
+        <Button text="9" style={buttonStyle} />
+        <Button text="X" style={{ ...buttonStyle, backgroundColor: 'orange' }} />
+        <Button text="4" style={buttonStyle} />
+        <Button text="5" style={buttonStyle} />
+        <Button text="6" style={buttonStyle} />
+        <Button text="-" style={{ ...buttonStyle, backgroundColor: 'orange' }} />
+        <Button text="1" style={buttonStyle} />
+        <Button text="2" style={buttonStyle} />
+        <Button text="3" style={buttonStyle} />
+        <Button text="+" style={{ ...buttonStyle, backgroundColor: 'orange' }} />
+        <Button text="0" style={{ ...buttonStyle, gridColumn: '1 / span 2' }} />
+        <Button text="." style={buttonStyle} />
+        <Button text="=" style={{ ...buttonStyle, backgroundColor: 'orange' }} />
       </div>
     </div>
   );
 }
-
-export default Calculator;
