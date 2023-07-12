@@ -68,12 +68,6 @@ This is react project that includes a real calculator for basic operations with 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 <a  name="live-demo" href="https://cancelei.github.io/JS-capstone-M2/dist/index.html">Live Demo</a>
-
-## 🚀 <a  name="live-demo" href="https://clipchamp.com/watch/2OFqkUjfj9Q">Video Presentation</a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
