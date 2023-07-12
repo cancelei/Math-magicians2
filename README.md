@@ -138,11 +138,11 @@ N/A
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-N/A
+Contributions, issues, and feature requests are welcome! Please consider this issue link: [Project Issues](https://github.com/cancelei/Math-magicians2/issues)
 
 ## ⭐️ Show your support <a name="support"></a>
 
-N/A
+If you like this project kindly leave a star!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
