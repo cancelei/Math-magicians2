@@ -62,15 +62,9 @@ This is react project that includes a real calculator for basic operations with 
 
 ### Key Features <a name="key-features"></a>
 
-- React Html and Css best paractice
-- JavaScript best paractice
+- Component that created all the styling.
+- React Html/Css/JavaScript best paractice
 - Using gitflow and GitHub flow
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 <a  name="live-demo" href="https://cancelei.github.io/JS-capstone-M2/dist/index.html">Live Demo</a>
-
-## 🚀 <a  name="live-demo" href="https://clipchamp.com/watch/2OFqkUjfj9Q">Video Presentation</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,19 +130,19 @@ N/A
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Implement Components
-- Use different React Hooks
+- Implement Functional Components.
+- Use different React Hooks.
 - Implement more features.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-N/A
+Contributions, issues, and feature requests are welcome! Please consider this issue link: [Project Issues](https://github.com/cancelei/Math-magicians2/issues)
 
 ## ⭐️ Show your support <a name="support"></a>
 
-N/A
+If you like this project kindly leave a star!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
