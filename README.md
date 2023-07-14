@@ -111,13 +111,13 @@ npx Stylelint "**/*.{css,scss}"
 - To run linter test on ES Lint (JS). Use the below command:
 npx eslint .
 
-### Deployment
+<!-- ### Deployment
 
-N/A
+N/A -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
+<!-- ## 👥 Authors <a name="authors"></a> -->
 
 > Mention all of the collaborators of this project.
 
