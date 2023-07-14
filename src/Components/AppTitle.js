@@ -1,8 +1,8 @@
 import React from 'react';
-import './Components/style.css';
+import './style.css';
 
 export default function CalculatorTitle() {
   return (
-    <div className="title">Calculator | React</div>
+    <div className="title">Calculator | Using React</div>
   );
 }
