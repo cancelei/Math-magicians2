@@ -117,9 +117,7 @@ N/A -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ## 👥 Authors <a name="authors"></a> -->
-
-> Mention all of the collaborators of this project.
+## 👥 Authors <a name="authors"></a>
 
 👤 **Author Glauber Bannwart**
 
