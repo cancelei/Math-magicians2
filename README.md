@@ -46,7 +46,7 @@ This is react project that includes a real calculator for basic operations with 
   </ul>
 </details>
 
-<details>
+<!-- <details>
   <summary>Server</summary>
   <ul>
     <li>N/A</li>
@@ -58,7 +58,7 @@ This is react project that includes a real calculator for basic operations with 
   <ul>
     <li>N/A</li>
   </ul>
-</details>
+</details> -->
 
 ### Key Features <a name="key-features"></a>
 
