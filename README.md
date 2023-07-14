@@ -46,7 +46,7 @@ This is react project that includes a real calculator for basic operations with 
   </ul>
 </details>
 
-<details>
+<!-- <details>
   <summary>Server</summary>
   <ul>
     <li>N/A</li>
@@ -58,10 +58,12 @@ This is react project that includes a real calculator for basic operations with 
   <ul>
     <li>N/A</li>
   </ul>
-</details>
+</details> -->
 
 ### Key Features <a name="key-features"></a>
 
+- Functional Components using React
+- Improved Layout
 - Component that created all the styling.
 - React Html/Css/JavaScript best paractice
 - Using gitflow and GitHub flow
@@ -109,15 +111,13 @@ npx Stylelint "**/*.{css,scss}"
 - To run linter test on ES Lint (JS). Use the below command:
 npx eslint .
 
-### Deployment
+<!-- ### Deployment
 
-N/A
+N/A -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Author Glauber Bannwart**
 
@@ -130,8 +130,7 @@ N/A
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Implement Functional Components.
-- Use different React Hooks.
+- Implement API / Fetch.
 - Implement more features.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

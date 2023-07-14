@@ -1,83 +1,49 @@
-import React from 'react';
-import PropTypes from 'prop-types'; // eslint-disable-line import/no-extraneous-dependencies
+import { useState } from 'react';
+import './style.css';
+import CalculatorTitle from './AppTitle';
+import calculate from '../logic/calculate';
 
-function Button({ text, style }) {
-  return (
-    <button type="button" style={style}>
-      {text}
-    </button>
-  );
-}
+function App() {
+  const [currentOperand, setCurrentOperand] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-Button.propTypes = {
-  text: PropTypes.string.isRequired,
-  style: PropTypes.shape({
-    backgroundColor: PropTypes.string,
-    border: PropTypes.string,
-    padding: PropTypes.string,
-    borderRadius: PropTypes.string,
-    cursor: PropTypes.string,
-    gridColumn: PropTypes.string,
-  }).isRequired,
-};
-
-export default function Calculator() {
-  const calculatorStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    maxWidth: '300px',
-    margin: '0 auto',
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-    padding: '10px',
-  };
-
-  const displayStyle = {
-    backgroundColor: '#f9f9f9',
-    padding: '10px',
-    marginBottom: '10px',
-    textAlign: 'right',
-    borderRadius: '3px',
-  };
-
-  const buttonStyle = {
-    backgroundColor: '#f2f2f2',
-    border: '1px solid #ccc',
-    padding: '10px',
-    borderRadius: '3px',
-    cursor: 'pointer',
-  };
-
-  const buttonParent = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(4, 1fr)',
+  const handleClick = (buttonName) => {
+    setCurrentOperand((prevOperand) => calculate(prevOperand, buttonName));
   };
 
   return (
-    <div style={calculatorStyle}>
-      <input placeholder="0" style={displayStyle} />
+    <div>
+      <CalculatorTitle />
 
-      <div style={buttonParent}>
-        <Button text="AC" style={buttonStyle} />
-        <Button text="+/-" style={buttonStyle} />
-        <Button text="%" style={buttonStyle} />
-        <Button text="/" style={{ ...buttonStyle, backgroundColor: 'orange' }} />
-        <Button text="7" style={buttonStyle} />
-        <Button text="8" style={buttonStyle} />
-        <Button text="9" style={buttonStyle} />
-        <Button text="X" style={{ ...buttonStyle, backgroundColor: 'orange' }} />
-        <Button text="4" style={buttonStyle} />
-        <Button text="5" style={buttonStyle} />
-        <Button text="6" style={buttonStyle} />
-        <Button text="-" style={{ ...buttonStyle, backgroundColor: 'orange' }} />
-        <Button text="1" style={buttonStyle} />
-        <Button text="2" style={buttonStyle} />
-        <Button text="3" style={buttonStyle} />
-        <Button text="+" style={{ ...buttonStyle, backgroundColor: 'orange' }} />
-        <Button text="0" style={{ ...buttonStyle, gridColumn: '1 / span 2' }} />
-        <Button text="." style={buttonStyle} />
-        <Button text="=" style={{ ...buttonStyle, backgroundColor: 'orange' }} />
+      <div className="calculator-grid">
+        <div className="output">
+          <div className="current-operand">{currentOperand.next || currentOperand.total || '0'}</div>
+        </div>
+        <button type="button" onClick={() => handleClick('AC')}>AC</button>
+        <button type="button" onClick={() => handleClick('+/-')}>+/-</button>
+        <button type="button" onClick={() => handleClick('%')}>%</button>
+        <button type="button" className="orange" onClick={() => handleClick('÷')}>÷</button>
+        <button type="button" onClick={() => handleClick('7')}>7</button>
+        <button type="button" onClick={() => handleClick('8')}>8</button>
+        <button type="button" onClick={() => handleClick('9')}>9</button>
+        <button type="button" className="orange" onClick={() => handleClick('x')}>x</button>
+        <button type="button" onClick={() => handleClick('4')}>4</button>
+        <button type="button" onClick={() => handleClick('5')}>5</button>
+        <button type="button" onClick={() => handleClick('6')}>6</button>
+        <button type="button" className="orange" onClick={() => handleClick('-')}>-</button>
+        <button type="button" onClick={() => handleClick('1')}>1</button>
+        <button type="button" onClick={() => handleClick('2')}>2</button>
+        <button type="button" onClick={() => handleClick('3')}>3</button>
+        <button type="button" className="orange" onClick={() => handleClick('+')}>+</button>
+        <button type="button" className="span-two" onClick={() => handleClick('0')}>0</button>
+        <button type="button" onClick={() => handleClick('.')}>.</button>
+        <button type="button" className="orange" onClick={() => handleClick('=')}>=</button>
       </div>
     </div>
   );
 }
+
+export default App;
