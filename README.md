@@ -62,6 +62,8 @@ This is react project that includes a real calculator for basic operations with 
 
 ### Key Features <a name="key-features"></a>
 
+- Functional Components using React
+- Improved Layout
 - Component that created all the styling.
 - React Html/Css/JavaScript best paractice
 - Using gitflow and GitHub flow
@@ -130,8 +132,7 @@ N/A
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Implement Functional Components.
-- Use different React Hooks.
+- Implement API / Fetch.
 - Implement more features.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
