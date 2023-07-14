@@ -1,27 +1,10 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import '../style.css';
+import { useState } from 'react';
+import './Components/style.css';
+import CalculatorTitle from './AppTitle';
 import calculate from '../logic/calculate';
+import Quote from './Quote';
 
-function Button({ text, className, clickHandler }) {
-  return (
-    <button type="button" className={className} onClick={clickHandler}>
-      {text}
-    </button>
-  );
-}
-
-Button.propTypes = {
-  text: PropTypes.string.isRequired,
-  className: PropTypes.string,
-  clickHandler: PropTypes.func.isRequired,
-};
-
-Button.defaultProps = {
-  className: '',
-};
-
-export default function Calculator() {
+function App() {
   const [currentOperand, setCurrentOperand] = useState({
     total: null,
     next: null,
@@ -32,22 +15,37 @@ export default function Calculator() {
     setCurrentOperand((prevOperand) => calculate(prevOperand, buttonName));
   };
 
-  const displayValue = currentOperand.next || currentOperand.total || '0';
-
   return (
-    <div className="calculator">
-      <div className="output">
-        <div className="display">{displayValue}</div>
-      </div>
+    <div>
+      <CalculatorTitle />
 
-      <div className="button-parent">
-        {['AC', '+/-', '%', '/', '7', '8', '9', 'X', '4', '5', '6', '-', '1', '2', '3', '+'].map((buttonName) => (
-          <Button key={buttonName} text={buttonName} className={`button ${buttonName}`} onClick={() => handleClick(buttonName)} />
-        ))}
-        <Button text="0" className="button button-zero" onClick={() => handleClick('0')} />
-        <Button text="." className="button" onClick={() => handleClick('.')} />
-        <Button text="=" className="button button-orange" onClick={() => handleClick('=')} />
+      <div className="calculator-grid">
+        <div className="output">
+          <div className="current-operand">{currentOperand.next || currentOperand.total || '0'}</div>
+        </div>
+        <button type="button" onClick={() => handleClick('AC')}>AC</button>
+        <button type="button" onClick={() => handleClick('+/-')}>+/-</button>
+        <button type="button" onClick={() => handleClick('%')}>%</button>
+        <button type="button" className="orange" onClick={() => handleClick('÷')}>÷</button>
+        <button type="button" onClick={() => handleClick('7')}>7</button>
+        <button type="button" onClick={() => handleClick('8')}>8</button>
+        <button type="button" onClick={() => handleClick('9')}>9</button>
+        <button type="button" className="orange" onClick={() => handleClick('x')}>x</button>
+        <button type="button" onClick={() => handleClick('4')}>4</button>
+        <button type="button" onClick={() => handleClick('5')}>5</button>
+        <button type="button" onClick={() => handleClick('6')}>6</button>
+        <button type="button" className="orange" onClick={() => handleClick('-')}>-</button>
+        <button type="button" onClick={() => handleClick('1')}>1</button>
+        <button type="button" onClick={() => handleClick('2')}>2</button>
+        <button type="button" onClick={() => handleClick('3')}>3</button>
+        <button type="button" className="orange" onClick={() => handleClick('+')}>+</button>
+        <button type="button" className="span-two" onClick={() => handleClick('0')}>0</button>
+        <button type="button" onClick={() => handleClick('.')}>.</button>
+        <button type="button" className="orange" onClick={() => handleClick('=')}>=</button>
       </div>
+      <Quote />
     </div>
   );
 }
+
+export default App;
