@@ -62,6 +62,7 @@ This is react project that includes a real calculator for basic operations with 
 
 ### Key Features <a name="key-features"></a>
 
+- Fetch Quotes on the end of the Calculator.
 - Functional Components using React
 - Improved Layout
 - Component that created all the styling.
@@ -130,8 +131,7 @@ N/A -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Implement API / Fetch.
-- Implement more features.
+- Implement more features onwards.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
