@@ -2,9 +2,8 @@ import { useState } from 'react';
 import '../styles/style.css';
 import CalculatorTitle from './AppTitle';
 import calculate from '../logic/calculate';
-import Quote from './Quote';
 
-function App() {
+function Calculator() {
   const [currentOperand, setCurrentOperand] = useState({
     total: null,
     next: null,
@@ -107,9 +106,8 @@ function App() {
           =
         </button>
       </div>
-      <Quote />
     </div>
   );
 }
 
-export default App;
+export default Calculator;
