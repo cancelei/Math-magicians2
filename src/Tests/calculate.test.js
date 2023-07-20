@@ -14,3 +14,10 @@ describe('calculate', () => {
     expect(calculate(calculator, '.')).toEqual({ total: '0', next: '5.', operation: '.' });
   });
 });
+
+describe('calculate', () => {
+  test('fraction decimal', () => {
+    const calculator = { total: '10', next: '5-', operation: '+/-' };
+    expect(calculate(calculator, '+/-')).toEqual({ total: '10', next: '-5', operation: '+/-' });
+  });
+});
