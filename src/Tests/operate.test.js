@@ -26,7 +26,9 @@ describe('operate', () => {
 });
 
 describe('operate', () => {
-  test('Divide Numbers', () => {
+  test('Module Numbers', () => {
     expect(operate(8, 2, '%')).toBe('0');
   });
 });
+
+/** Tada! */
