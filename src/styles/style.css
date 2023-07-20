@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
@@ -83,6 +81,12 @@ body {
   background-color: #333;
   color: white;
   padding: 10px;
+  font-size: 2rem;
+}
+
+.navbar:hover {
+  color: orange;
+  background-color: #2e42c4;
 }
 
 .navbar ul {
@@ -95,4 +99,8 @@ body {
 .navbar a {
   color: white;
   text-decoration: none;
+}
+
+.navbar a:hover {
+  color: blue;
 }
