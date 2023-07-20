@@ -62,6 +62,8 @@ This is react project that includes a real calculator for basic operations with 
 
 ### Key Features <a name="key-features"></a>
 
+- Complete APP with 3 SPA views, without Create React App.
+- Routing System using React Route and Improved Styling for all pages/Nav (Hovers);
 - Fetch Quotes on the end of the Calculator.
 - Functional Components using React
 - Improved Layout
@@ -131,7 +133,7 @@ N/A -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Implement more features onwards.
+- Implement testing with weekly coding partner (next PR);
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,7 +150,7 @@ If you like this project kindly leave a star!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We are gratefull of Microvers stuff and founder for creating such an amazing envirnment that we can work and learn.
+We are gratefull of Microverse collaborators for creating such an amazing envirnment that we can work and learn.
 
 ## 📝 License <a name="license"></a>
 
