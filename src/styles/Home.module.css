@@ -6,7 +6,6 @@
   font-family: 'Arial', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: top;
   align-items: center;
 }
 
@@ -18,5 +17,5 @@
   font-size: 1.7rem;
   max-width: 800px;
   text-align: center;
-  color:aqua
+  color: aqua;
 }
