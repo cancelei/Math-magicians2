@@ -114,9 +114,8 @@ npx Stylelint "**/*.{css,scss}"
 - To run linter test on ES Lint (JS). Use the below command:
 npx eslint .
 
-<!-- ### Deployment
+### [Deployment](calculator-8bmq.onrender.com)
 
-N/A -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
